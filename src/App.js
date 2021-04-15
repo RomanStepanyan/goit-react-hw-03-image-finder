@@ -34,7 +34,7 @@ export default class App extends Component {
       console.log('Error => ', error);
       return [];
     }
-    this.scrollPage();
+    // this.scrollPage();
   }
 
   onSubmitHandler = search => {
@@ -56,6 +56,7 @@ export default class App extends Component {
     } finally {
       this.setState({ isloading: false });
     }
+    this.scrollPage();
   };
 
   scrollPage = () => {
